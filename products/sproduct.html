@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="products.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Tea-Shirt</title>
+  </head>
+
+  <body>
+    <section class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">☕-Shirt</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Info</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="container sproduct">
+      <div class="row">
+        <div class="col col-lg-5 col-md-12 col-sm-12">
+          <img
+            id="MainImg"
+            class="img-fluid"
+            width="80%"
+            src="shop\1.jpg"
+            alt=""
+          />
+
+          <div class="small-img-group">
+            <div class="small-img-col">
+              <img class="img-fluid" width="100%" src="shop\1.jpg" alt="" />
+            </div>
+            <div class="small-img-col">
+              <img class="small-img" width="100%" src="shop\24.jpg" alt="" />
+            </div>
+
+            <div class="small-img-col">
+              <img class="small-img" width="100%" src="shop\25.jpg" alt="" />
+            </div>
+
+            <div class="small-img-col">
+              <img class="small-img" width="100%" src="shop\26.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-details col-lg-6 col-md-12 col-sm-12">
+          <h4 class="product-dis-header">Basic Slim Fit T-SHIRT</h4>
+
+          <h5 class="Pricing-details">17.90 USD</h5>
+          <select class="select-size my-3">
+            <option>Select size</option>
+
+            <option>S</option>
+
+            <option>M</option>
+
+            <option>L</option>
+
+            <option>XL</option>
+
+            <option>XXL</option>
+          </select>
+          <input class="qnt-input" type="number" value="1" />
+          <button class="buy-btn btn-dark" type="button" name="butto">
+            ADD TO CART
+          </button>
+          <h3 class="product-details">Product details</h3>
+          <p class="product-dis">
+            T-SHIRT MADE OF STRETCHY COTTON ROUND NECK SHORT SLEEVES
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var MainImg1 = document.getElementById("MainImg");
+      var SmallImg = document.getElementByClassName("small-img");
+      SmallImg[0].onclick = function () {
+        MainImg1.src = SmallImg[0].src;
+      };
+      SmallImg[1].onclick = function () {
+        MainImg1.src = SmallImg[2].src;
+      };
+      SmallImg[2].onclick = function () {
+        MainImg1.src = SmallImg[2].src;
+      };
+      SmallImg[3].onclick = function () {
+        MainImg1.src = SmallImg[3].src;
+      };
+    </script>
+  </body>
+</html>

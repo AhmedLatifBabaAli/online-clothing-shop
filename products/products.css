@@ -1,0 +1,25 @@
+.navbar {
+  text-align: center;
+}
+.navbar-nav {
+  padding-right: 5px;
+}
+
+.product-heading {
+  margin-left: 20px;
+}
+
+.product-img-details {
+  width: 30%;
+}
+.product-img-links {
+  list-style: none;
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
